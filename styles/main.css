@@ -21,7 +21,39 @@ html {
     max-width: 200px;
     margin-top: 50px;
     margin-bottom: 35px;
+    
+    animation: fly-in 5s ease-in-out 0s 1, 
+               plain-hover 10s ease-in-out 5.5s infinite;
+    
 }
+
+@keyframes fly-in {
+    0% {
+        opacity: 0;
+        transform: translate(-60vw, 0);
+    }
+    100% {
+        opacity: .9;
+        transform: translate(0, 0);
+    }  
+}
+
+@keyframes plain-hover {
+    0%, 100% {
+        transform: translate(0, 0px);
+    }
+    25% {
+        transform: translate(0, -7px);
+    }   
+    50% {
+        transform: translate(0, 7px)
+    }  
+    75% {
+        transform: translate(0, 5px) scale(1.025);
+    }
+}
+
+
 
 .main {
     color: white;
@@ -41,4 +73,10 @@ html {
     background-color: rgb( 135, 111, 96);
     padding: 10px 20px;
     border-radius: 10000px;
+
+    transition: background-color .5s;
+}
+
+.button:hover {
+    background-color: rgb( 36, 29, 25); 
 }
