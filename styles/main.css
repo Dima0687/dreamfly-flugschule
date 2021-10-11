@@ -10,8 +10,35 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Dosis', sans-serif;
+}
+
+.header {
+    text-align: center;
 }
 
 .logo {
     max-width: 200px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.main {
+    color: white;
+    text-align: center;
+}
+
+.main--heading {
+    margin-bottom: 5px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: rgb( 135, 111, 96);
+    padding: 10px 20px;
+    border-radius: 10000px;
 }
