@@ -13,16 +13,22 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Dosis', sans-serif;
+    font-size: 62.5%;
 }
 
+@media (min-width: 62em) {
+        html {
+            font-size: 1.5rem;
+        }
+}
 .header {
     text-align: center;
 }
 
 .logo {
-    max-width: 200px;
-    margin-top: 50px;
-    margin-bottom: 35px;
+    max-width: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 3.5rem;
     
     animation: fly-in 5s ease-in-out 0s 1, 
                plain-hover 10s ease-in-out 5.5s infinite;
@@ -45,38 +51,39 @@ html {
         transform: translate(0, 0px);
     }
     25% {
-        transform: translate(0, -7px);
+        transform: translate(0, -.7rem);
     }   
     50% {
-        transform: translate(0, 7px)
+        transform: translate(0, .7rem)
     }  
     75% {
-        transform: translate(0, 5px) scale(1.025);
+        transform: translate(0, .5rem) scale(1.025);
     }
 }
 
 
 
 .main {
+    font-size: 1.5rem;
     color: white;
     text-align: center;
 }
 .main--heading {
-    margin-bottom: 5px;
-    text-shadow: 0 0 5px black;
+    margin-bottom: .5rem;
+    text-shadow: 0 0 .5rem black;
 }
 .main--paragraph {
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 .5rem black;
 }
 
 .button {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 1rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
     background-color: rgb( 167, 135, 115);
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border-radius: 10000px;
 
     transition: background-color 500ms;
