@@ -16,7 +16,7 @@ html {
     font-size: 62.5%;
 }
 
-@media (min-width: 62em) {
+@media (min-width: 48em) {
         html {
             font-size: 1.5rem;
         }
@@ -32,7 +32,6 @@ html {
     
     animation: fly-in 5s ease-in-out 0s 1, 
                plain-hover 10s ease-in-out 5.5s infinite;
-    
 }
 
 @keyframes fly-in {
@@ -48,7 +47,7 @@ html {
 
 @keyframes plain-hover {
     0%, 100% {
-        transform: translate(0, 0px);
+        transform: translate(0, 0);
     }
     25% {
         transform: translate(0, -.7rem);
