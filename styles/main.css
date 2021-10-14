@@ -16,11 +16,6 @@ html {
     font-size: 62.5%;
 }
 
-@media (min-width: 48em) {
-        html {
-            font-size: 1.5rem;
-        }
-}
 .header {
     text-align: center;
 }
